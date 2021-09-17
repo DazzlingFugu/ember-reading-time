@@ -1,5 +1,11 @@
 {{page-title "Dummy"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to ember-reading-times</h2>
 
 {{outlet}}
+
+{{get (reading-time this.demoText) 'text'}}
+
+<hr />
+
+{{this.demoText}}
