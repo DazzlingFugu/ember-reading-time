@@ -16,7 +16,17 @@ ember install ember-reading-time
 
 ## Usage
 
-[Longer description of how to use the addon in apps.]
+By default, `reading-time` helper will humanize down to the minute and use english as language.
+
+```hbs
+{{reading-time 'My text here'}}
+
+{{reading-time 'My text here' (hash language='ja')}}
+```
+
+### Options
+
+All options from `humanize-duration` are available: https://github.com/EvanHahn/HumanizeDuration.js#options
 
 ## Contributing
 
