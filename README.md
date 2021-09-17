@@ -2,6 +2,8 @@
 
 Medium's like reading time estimation for EmberJS.
 
+Based on [reading-time](https://github.com/ngryman/reading-time) and [humanized-duration](https://github.com/EvanHahn/HumanizeDuration.js/) libraries.
+
 ## Compatibility
 
 - Ember.js v3.16 or above
