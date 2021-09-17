@@ -3,10 +3,10 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Helper | reading-time', function(hooks) {
+module('Integration | Helper | reading-time', function (hooks) {
   setupRenderingTest(hooks);
 
-  test('it renders reading-time text', async function(assert) {
+  test('it renders reading-time text', async function (assert) {
     this.set('value', 'test');
     await render(hbs`{{get (reading-time this.value) 'text'}}`);
     assert.deepEqual(this.element.textContent.trim(), '1 min read');
