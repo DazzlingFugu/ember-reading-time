@@ -1,6 +1,6 @@
 # ember-reading-time
 
-Medium's like reading time estimation for EmberJS.
+Medium-like reading time estimation for EmberJS.
 
 Based on [reading-time](https://github.com/ngryman/reading-time) and [humanized-duration](https://github.com/EvanHahn/HumanizeDuration.js/) libraries.
 
