@@ -78,8 +78,20 @@ module.exports = async function () {
           },
         },
       },
-      embroiderSafe(),
-      embroiderOptimized(),
+      embroiderSafe({
+        npm: {
+          dependencies: {
+            'stream-browserify': '3',
+          },
+        },
+      }),
+      embroiderOptimized({
+        npm: {
+          dependencies: {
+            'stream-browserify': '3',
+          },
+        },
+      }),
     ],
   };
 };
