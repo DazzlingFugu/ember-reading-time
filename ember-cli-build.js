@@ -21,5 +21,15 @@ module.exports = function (defaults) {
         package: 'qunit',
       },
     ],
+    webpack: {
+      node: {
+        global: true,
+      },
+      resolve: {
+        fallback: {
+          stream: require.resolve('stream-browserify'),
+        },
+      },
+    },
   });
 };
