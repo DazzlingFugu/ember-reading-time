@@ -1,7 +1,15 @@
 {
   "name": "ember-reading-time",
-  "version": "1.0.0",
   "description": "Medium-like reading time estimation for EmberJS.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "PeopleDoc",
+    "url": "https://github.com/peopledoc"
+  },
+  "homepage": "https://github.com/peopledoc/ember-reading-time",
+  "repository": "https://github.com/peopledoc/ember-reading-time",
+  "bugs": "https://github.com/peopledoc/ember-reading-time/issues",
   "keywords": [
     "ember",
     "emberjs",
@@ -14,14 +22,6 @@
     "remaining",
     "time"
   ],
-  "homepage": "https://github.com/peopledoc/ember-reading-time",
-  "repository": "https://github.com/peopledoc/ember-reading-time",
-  "bugs": "https://github.com/peopledoc/ember-reading-time/issues",
-  "license": "MIT",
-  "author": {
-    "name": "PeopleDoc",
-    "url": "https://github.com/peopledoc"
-  },
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
