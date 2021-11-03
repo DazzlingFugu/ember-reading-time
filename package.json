@@ -11,7 +11,10 @@
   "repository": "https://github.com/peopledoc/ember-reading-time",
   "bugs": "https://github.com/peopledoc/ember-reading-time/issues",
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "PeopleDoc",
+    "url": "https://github.com/peopledoc"
+  },
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
