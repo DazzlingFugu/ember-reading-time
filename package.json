@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "Medium-like reading time estimation for EmberJS.",
   "keywords": [
+    "ember",
+    "emberjs",
     "ember-addon",
+    "estimated",
+    "estimation",
+    "medium",
+    "medium-like",
     "reading",
+    "remaining",
     "time"
   ],
   "homepage": "https://github.com/peopledoc/ember-reading-time",
