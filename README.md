@@ -34,16 +34,10 @@ All options from `humanize-duration` are available: https://github.com/EvanHahn/
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-## Contributors ✨
+## Contributors
 
-[//]: contributor-faces
-<a href="https://github.com/GreatWizard"><img src="https://avatars.githubusercontent.com/u/1322081?v=4" title="GreatWizard" width="80" height="80"></a>
-<a href="https://github.com/MrChocolatine"><img src="https://avatars.githubusercontent.com/u/47531779?v=4" title="MrChocolatine" width="80" height="80"></a>
-<a href="https://github.com/yonmey"><img src="https://avatars.githubusercontent.com/u/3025706?v=4" title="yonmey" width="80" height="80"></a>
-<a href="https://github.com/ef4"><img src="https://avatars.githubusercontent.com/u/319282?v=4" title="ef4" width="80" height="80"></a>
-<a href="https://github.com/ewjoachim"><img src="https://avatars.githubusercontent.com/u/1457576?v=4" title="ewjoachim" width="80" height="80"></a>
-
-[//]: contributor-faces
+<!-- readme: contributors,ember-tomster/- -start -->
+<!-- readme: contributors,ember-tomster/- -end -->
 
 ## License
 
