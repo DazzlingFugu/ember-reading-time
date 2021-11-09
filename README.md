@@ -37,6 +37,44 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 ## Contributors
 
 <!-- readme: contributors,ember-tomster/- -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/GreatWizard">
+            <img src="https://avatars.githubusercontent.com/u/1322081?v=4" width="100;" alt="GreatWizard"/>
+            <br />
+            <sub><b>GreatWizard</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MrChocolatine">
+            <img src="https://avatars.githubusercontent.com/u/47531779?v=4" width="100;" alt="MrChocolatine"/>
+            <br />
+            <sub><b>MrChocolatine</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/yonmey">
+            <img src="https://avatars.githubusercontent.com/u/3025706?v=4" width="100;" alt="yonmey"/>
+            <br />
+            <sub><b>yonmey</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ef4">
+            <img src="https://avatars.githubusercontent.com/u/319282?v=4" width="100;" alt="ef4"/>
+            <br />
+            <sub><b>ef4</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ewjoachim">
+            <img src="https://avatars.githubusercontent.com/u/1457576?v=4" width="100;" alt="ewjoachim"/>
+            <br />
+            <sub><b>ewjoachim</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: contributors,ember-tomster/- -end -->
 
 ## License
