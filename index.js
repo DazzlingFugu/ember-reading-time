@@ -6,7 +6,12 @@ module.exports = {
     autoImport: {
       webpack: {
         node: {
-          stream: true,
+          global: true,
+        },
+        resolve: {
+          fallback: {
+            stream: require.resolve('stream-browserify'),
+          },
         },
       },
     },
