@@ -1,5 +1,7 @@
 # ember-reading-time
 
+[![CI](https://github.com/DazzlingFugu/ember-reading-time/actions/workflows/ci.yml/badge.svg)](https://github.com/DazzlingFugu/ember-reading-time/actions/workflows/ci.yml) [![Ember Observer Score](https://emberobserver.com/badges/ember-reading-time.svg)](https://emberobserver.com/addons/ember-reading-time) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Medium-like reading time estimation for EmberJS.
 
 Based on [reading-time](https://github.com/ngryman/reading-time) and [humanized-duration](https://github.com/EvanHahn/HumanizeDuration.js/) libraries.

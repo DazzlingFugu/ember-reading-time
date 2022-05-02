@@ -1,5 +1,1 @@
-# Documentation :
-# https://help.github.com/en/articles/about-code-owners
-
-# Default owners for everything in the repo
-*                       @peopledoc/tribe-js
+* @DazzlingFugu/emberenos
