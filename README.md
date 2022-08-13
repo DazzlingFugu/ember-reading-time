@@ -63,17 +63,17 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/romgere">
+            <img src="https://avatars.githubusercontent.com/u/13900970?v=4" width="100;" alt="romgere"/>
+            <br />
+            <sub><b>romgere</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ef4">
             <img src="https://avatars.githubusercontent.com/u/319282?v=4" width="100;" alt="ef4"/>
             <br />
             <sub><b>ef4</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/ewjoachim">
-            <img src="https://avatars.githubusercontent.com/u/1457576?v=4" width="100;" alt="ewjoachim"/>
-            <br />
-            <sub><b>ewjoachim</b></sub>
         </a>
     </td></tr>
 </table>
