@@ -6575,9 +6575,9 @@ human-signals@^2.1.0:
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
 humanize-duration@^3.27.0:
-  version "3.27.1"
-  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.1.tgz#2cd4ea4b03bd92184aee6d90d77a8f3d7628df69"
-  integrity sha512-jCVkMl+EaM80rrMrAPl96SGG4NRac53UyI1o/yAzebDntEY6K6/Fj2HOjdPg8omTqIe5Y0wPBai2q5xXrIbarA==
+  version "3.27.3"
+  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.27.3.tgz#db654e72ebf5ccfe232c7f56bc58aa3a6fe4df88"
+  integrity sha512-iimHkHPfIAQ8zCDQLgn08pRqSVioyWvnGfaQ8gond2wf7Jq2jJ+24ykmnRyiz3fIldcn4oUuQXpjqKLhSVR7lw==
 
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
