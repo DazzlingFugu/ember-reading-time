@@ -56,6 +56,13 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/romgere">
+            <img src="https://avatars.githubusercontent.com/u/13900970?v=4" width="100;" alt="romgere"/>
+            <br />
+            <sub><b>romgere</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/yonmey">
             <img src="https://avatars.githubusercontent.com/u/3025706?v=4" width="100;" alt="yonmey"/>
             <br />
@@ -70,10 +77,10 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/ewjoachim">
-            <img src="https://avatars.githubusercontent.com/u/1457576?v=4" width="100;" alt="ewjoachim"/>
+        <a href="https://github.com/ndekeister-us">
+            <img src="https://avatars.githubusercontent.com/u/56396753?v=4" width="100;" alt="ndekeister-us"/>
             <br />
-            <sub><b>ewjoachim</b></sub>
+            <sub><b>ndekeister-us</b></sub>
         </a>
     </td></tr>
 </table>
