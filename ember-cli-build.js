@@ -10,7 +10,7 @@ const { maybeEmbroider } = require('@embroider/test-setup');
 const IS_EMBROIDER_ENABLED = Boolean(process.env.EMBROIDER_TEST_SETUP_OPTIONS);
 
 module.exports = function (defaults) {
-  let app = new EmberAddon(defaults, {
+  const app = new EmberAddon(defaults, {
     // Add options here
   });
 
