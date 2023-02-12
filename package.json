@@ -46,8 +46,11 @@
     "ember-cli-babel": "^7.26.11",
     "ember-cli-htmlbars": "^6.2.0",
     "humanize-duration": "^3.27.0",
+    "process": "^0.11.10",
     "reading-time": "^1.5.0",
-    "stream-browserify": "^3.0.0"
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -82,8 +85,7 @@
     "loader.js": "^4.7.0",
     "prettier": "^2.8.3",
     "qunit": "^2.19.3",
-    "qunit-dom": "^2.0.0",
-    "webpack": "^5.75.0"
+    "qunit-dom": "^2.0.0"
   },
   "peerDependencies": {
     "ember-source": "^3.28.0 || ^4.0.0"
