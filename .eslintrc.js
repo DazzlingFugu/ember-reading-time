@@ -42,11 +42,10 @@ module.exports = {
         browser: false,
         node: true,
       },
-      plugins: ['n'],
       extends: ['plugin:n/recommended'],
     },
     {
-      // Test files:
+      // test files
       files: ['tests/**/*-test.{js,ts}'],
       extends: ['plugin:qunit/recommended'],
     },

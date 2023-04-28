@@ -2,6 +2,7 @@
 
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 const { maybeEmbroider } = require('@embroider/test-setup');
+const { ProvidePlugin } = require('webpack');
 
 /**
  * `EMBROIDER_TEST_SETUP_OPTIONS` is set by the Embroider scenarios for `ember-try`:
@@ -10,7 +11,7 @@ const { maybeEmbroider } = require('@embroider/test-setup');
 const IS_EMBROIDER_ENABLED = Boolean(process.env.EMBROIDER_TEST_SETUP_OPTIONS);
 
 module.exports = function (defaults) {
-  let app = new EmberAddon(defaults, {
+  const app = new EmberAddon(defaults, {
     // Add options here
   });
 
@@ -34,10 +35,16 @@ module.exports = function (defaults) {
         node: {
           global: true,
         },
+        plugins: [
+          new ProvidePlugin({
+            process: 'process/browser',
+          }),
+        ],
         resolve: {
           fallback: {
             // `stream-browserify` is added for the Embroider tests, see `config/ember-try.js`.
-            stream: require.resolve('stream-browserify') // eslint-disable-line
+            stream: require.resolve('stream-browserify'),
+            util: require.resolve('util/')
           },
         },
       },

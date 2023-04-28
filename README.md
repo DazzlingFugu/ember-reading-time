@@ -6,17 +6,21 @@ Medium-like reading time estimation for EmberJS.
 
 Based on [reading-time](https://github.com/ngryman/reading-time) and [humanized-duration](https://github.com/EvanHahn/HumanizeDuration.js/) libraries.
 
+
 ## Compatibility
 
-* Ember.js v3.20 or above
-* Ember CLI v3.20 or above
+
+* Ember.js v3.28 or above
+* Ember CLI v3.28 or above
 * Node.js v14 or above
+
 
 ## Installation
 
 ```
 ember install ember-reading-time
 ```
+
 
 ## Usage
 
@@ -28,13 +32,16 @@ By default, `reading-time` helper will humanize down to the minute and use engli
 {{reading-time 'My text here' (hash language='ja')}}
 ```
 
+
 ### Options
 
 All options from `humanize-duration` are available: https://github.com/EvanHahn/HumanizeDuration.js#options
 
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
+
 
 ## Contributors
 
@@ -78,6 +85,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
     </td></tr>
 </table>
 <!-- readme: contributors,ember-tomster/- -end -->
+
 
 ## License
 
