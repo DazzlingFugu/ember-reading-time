@@ -1,7 +1,7 @@
 {
   "name": "ember-reading-time",
   "description": "Medium-like reading time estimation for EmberJS.",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "license": "MIT",
   "author": {
     "name": "Dazzling Fugu",
