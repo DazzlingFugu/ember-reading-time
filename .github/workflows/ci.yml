@@ -17,6 +17,7 @@ jobs:
   org:
     uses: DazzlingFugu/.github/.github/workflows/js--emberjs-addons.yml@master
     with:
+      should-lint-lockfile: false
       node-version: 14
       package-manager: yarn
       ember-try-scenarios: "[
