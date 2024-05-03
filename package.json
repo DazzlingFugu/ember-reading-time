@@ -52,7 +52,7 @@
     "ember-auto-import": "^2.7.2",
     "ember-cli-babel": "^8.2.0",
     "ember-cli-htmlbars": "^6.3.0",
-    "humanize-duration": "^3.27.0",
+    "humanize-duration": "^3.32.0",
     "process": "^0.11.10",
     "reading-time": "^1.5.0",
     "stream-browserify": "^3.0.0",
