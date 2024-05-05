@@ -21,7 +21,7 @@ module('Integration | Helper | reading-time', function (hooks) {
 
     this.set(
       'value',
-      [...Array(1000).keys()].reduce((acc) => acc.concat('value '), '')
+      [...Array(1000).keys()].reduce((acc) => acc.concat('value '), ''),
     );
 
     assert.dom().hasText('5 minutes');
@@ -37,7 +37,7 @@ module('Integration | Helper | reading-time', function (hooks) {
 
     this.set(
       'value',
-      [...Array(1000).keys()].reduce((acc) => acc.concat('value '), '')
+      [...Array(1000).keys()].reduce((acc) => acc.concat('value '), ''),
     );
 
     assert.dom().hasText('5 分');

@@ -15,6 +15,6 @@ export default helper(function helperReadingTime(positional /*, named*/) {
 
   return humanizeDuration(
     stats.time < 60000 ? 60000 : stats.time,
-    Object.assign({}, defaultOptions, userOptions)
+    Object.assign({}, defaultOptions, userOptions),
   );
 });
