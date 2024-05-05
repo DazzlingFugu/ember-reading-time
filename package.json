@@ -1,17 +1,37 @@
 {
   "name": "ember-reading-time",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "3.0.0",
+  "description": "Medium-like reading time estimation for EmberJS.",
   "keywords": [
-    "ember-addon"
+    "ember",
+    "emberjs",
+    "ember-addon",
+    "estimated",
+    "estimation",
+    "medium",
+    "medium-like",
+    "reading",
+    "remaining",
+    "time"
   ],
-  "repository": "",
+  "repository": "https://github.com/DazzlingFugu/ember-reading-time",
+  "homepage": "https://github.com/DazzlingFugu/ember-reading-time",
+  "bugs": "https://github.com/DazzlingFugu/ember-reading-time/issues",
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Dazzling Fugu",
+    "url": "https://github.com/DazzlingFugu"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
+  "files": [
+    "/addon",
+    "/app",
+    "/config/environment.js",
+    "/index.js"
+  ],
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
@@ -29,20 +49,27 @@
   },
   "dependencies": {
     "@babel/core": "^7.24.4",
+    "ember-auto-import": "^2.5.0",
     "ember-cli-babel": "^8.2.0",
-    "ember-cli-htmlbars": "^6.3.0"
+    "ember-cli-htmlbars": "^6.3.0",
+    "humanize-duration": "^3.27.0",
+    "process": "^0.11.10",
+    "reading-time": "^1.5.0",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
     "@babel/plugin-proposal-decorators": "^7.24.1",
     "@ember/optional-features": "^2.1.0",
+    "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^3.3.0",
     "@embroider/test-setup": "^3.0.3",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.2",
-    "ember-auto-import": "^2.7.2",
     "ember-cli": "~5.8.1",
     "ember-cli-clean-css": "^3.0.0",
     "ember-cli-dependency-checker": "^3.3.2",
@@ -66,11 +93,10 @@
     "loader.js": "^4.7.0",
     "prettier": "^3.2.5",
     "qunit": "^2.20.1",
-    "qunit-dom": "^2.0.0",
+    "qunit-dom": "^3.0.0",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-prettier": "^4.1.0",
-    "webpack": "^5.91.0"
+    "stylelint-prettier": "^4.1.0"
   },
   "peerDependencies": {
     "ember-source": ">= 4.0.0"
