@@ -1,10 +1,9 @@
-import { helper } from '@ember/component/helper';
 import readingTime from 'reading-time';
 import humanizeDuration from 'humanize-duration';
 
-export default helper(function helperReadingTime(positional /*, named*/) {
-  const stats = readingTime(String(positional[0]));
-  const userOptions = positional[1];
+export default function helperReadingTime(value, options) {
+  const stats = readingTime(String(value));
+  const userOptions = options ?? {};
 
   const defaultOptions = {
     round: true,
@@ -17,4 +16,4 @@ export default helper(function helperReadingTime(positional /*, named*/) {
     stats.time < 60000 ? 60000 : stats.time,
     Object.assign({}, defaultOptions, userOptions),
   );
-});
+}

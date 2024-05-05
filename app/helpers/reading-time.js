@@ -1,1 +1,1 @@
-export { default, readingTime } from 'ember-reading-time/helpers/reading-time';
+export { default } from 'ember-reading-time/helpers/reading-time';
