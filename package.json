@@ -1,6 +1,6 @@
 {
   "name": "ember-reading-time",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Medium-like reading time estimation for EmberJS.",
   "keywords": [
     "ember",
