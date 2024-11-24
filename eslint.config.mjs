@@ -107,7 +107,7 @@ export default [
       },
 
       ecmaVersion: 5,
-      sourceType: "commonjs",
+      sourceType: "script",
     },
   },
   ...compat.extends("plugin:qunit/recommended").map((config) => ({
