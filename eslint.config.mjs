@@ -9,6 +9,7 @@ import { FlatCompat } from '@eslint/eslintrc';
 import pluginEmberRecommended from 'eslint-plugin-ember/configs/recommended';
 import pluginNode from 'eslint-plugin-n';
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import pluginQunitRecommended from 'eslint-plugin-qunit/configs/recommended';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -112,8 +113,8 @@ export default [
       sourceType: 'script',
     },
   },
-  ...compat.extends('plugin:qunit/recommended').map((config) => ({
-    ...config,
+  {
+    ...pluginQunitRecommended,
     files: ['tests/**/*-test.{js,ts}'],
-  })),
+  },
 ];
