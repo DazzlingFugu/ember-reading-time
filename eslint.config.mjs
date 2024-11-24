@@ -17,12 +17,19 @@ const compat = new FlatCompat({
 export default [
   {
     ignores: [
+      // Unconventional js
       "blueprints/*/files/",
+
+      // Compiled output
       "declarations/",
       "dist/",
+
+      // Misc
       "coverage/",
       "!**/.*",
       "**/.*/",
+
+      // ember-try
       ".node_modules.ember-try/",
     ],
   },
@@ -67,7 +74,6 @@ export default [
     ...config,
 
     files: [
-      "./.eslintrc.js",
       "./.prettierrc.js",
       "./.stylelintrc.js",
       "./.template-lintrc.js",
@@ -81,7 +87,6 @@ export default [
   })),
   {
     files: [
-      "./.eslintrc.js",
       "./.prettierrc.js",
       "./.stylelintrc.js",
       "./.template-lintrc.js",
