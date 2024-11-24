@@ -1356,6 +1356,11 @@
   dependencies:
     levn "^0.4.1"
 
+"@eslint/js@^9.15.0":
+  version "9.15.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.15.0.tgz#df0e24fe869143b59731942128c19938fdbadfb5"
+  integrity sha512-tMTqrY+EzbXmKJR5ToI8lxu7jaN5EdmrBFJpQk5JmSlyLsx6o4t27r883K5xsLuCYCpfKBCGswMSWXsM+jB7lg==
+
 "@glimmer/compiler@0.92.4":
   version "0.92.4"
   resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.92.4.tgz#58b8b2ddddd952434374d56195eb1da10a978450"
