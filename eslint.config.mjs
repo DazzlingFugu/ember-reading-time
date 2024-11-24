@@ -9,90 +9,104 @@ import { FlatCompat } from "@eslint/eslintrc";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
+  baseDirectory: __dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
 });
 
-export default [{
+export default [
+  {
     ignores: [
-        "blueprints/*/files/",
-        "declarations/",
-        "dist/",
-        "coverage/",
-        "!**/.*",
-        "**/.*/",
-        ".node_modules.ember-try/",
+      "blueprints/*/files/",
+      "declarations/",
+      "dist/",
+      "coverage/",
+      "!**/.*",
+      "**/.*/",
+      ".node_modules.ember-try/",
     ],
-}, ...compat.extends(
+  },
+  ...compat.extends(
     "eslint:recommended",
     "plugin:ember/recommended",
     "plugin:prettier/recommended",
-), {
+  ),
+  {
     plugins: {
-        ember,
+      ember,
     },
 
     languageOptions: {
-        globals: {
-            ...globals.browser,
+      globals: {
+        ...globals.browser,
+      },
+
+      parser: babelParser,
+      ecmaVersion: "latest",
+      sourceType: "module",
+
+      parserOptions: {
+        requireConfigFile: false,
+
+        babelOptions: {
+          plugins: [
+            [
+              "@babel/plugin-proposal-decorators",
+              {
+                decoratorsBeforeExport: true,
+              },
+            ],
+          ],
         },
-
-        parser: babelParser,
-        ecmaVersion: "latest",
-        sourceType: "module",
-
-        parserOptions: {
-            requireConfigFile: false,
-
-            babelOptions: {
-                plugins: [["@babel/plugin-proposal-decorators", {
-                    decoratorsBeforeExport: true,
-                }]],
-            },
-        },
+      },
     },
 
     rules: {},
-}, ...compat.extends("plugin:n/recommended").map(config => ({
+  },
+  ...compat.extends("plugin:n/recommended").map((config) => ({
     ...config,
 
     files: [
-        "./.eslintrc.js",
-        "./.prettierrc.js",
-        "./.stylelintrc.js",
-        "./.template-lintrc.js",
-        "./ember-cli-build.js",
-        "./index.js",
-        "./testem.js",
-        "./blueprints/*/index.js",
-        "./config/**/*.js",
-        "./tests/dummy/config/**/*.js",
+      "./.eslintrc.js",
+      "./.prettierrc.js",
+      "./.stylelintrc.js",
+      "./.template-lintrc.js",
+      "./ember-cli-build.js",
+      "./index.js",
+      "./testem.js",
+      "./blueprints/*/index.js",
+      "./config/**/*.js",
+      "./tests/dummy/config/**/*.js",
     ],
-})), {
+  })),
+  {
     files: [
-        "./.eslintrc.js",
-        "./.prettierrc.js",
-        "./.stylelintrc.js",
-        "./.template-lintrc.js",
-        "./ember-cli-build.js",
-        "./index.js",
-        "./testem.js",
-        "./blueprints/*/index.js",
-        "./config/**/*.js",
-        "./tests/dummy/config/**/*.js",
+      "./.eslintrc.js",
+      "./.prettierrc.js",
+      "./.stylelintrc.js",
+      "./.template-lintrc.js",
+      "./ember-cli-build.js",
+      "./index.js",
+      "./testem.js",
+      "./blueprints/*/index.js",
+      "./config/**/*.js",
+      "./tests/dummy/config/**/*.js",
     ],
 
     languageOptions: {
-        globals: {
-            ...Object.fromEntries(Object.entries(globals.browser).map(([key]) => [key, "off"])),
-            ...globals.node,
-        },
+      globals: {
+        ...Object.fromEntries(
+          Object.entries(globals.browser).map(([key]) => [key, "off"]),
+        ),
+        ...globals.node,
+      },
 
-        ecmaVersion: 5,
-        sourceType: "commonjs",
+      ecmaVersion: 5,
+      sourceType: "commonjs",
     },
-}, ...compat.extends("plugin:qunit/recommended").map(config => ({
+  },
+  ...compat.extends("plugin:qunit/recommended").map((config) => ({
     ...config,
     files: ["tests/**/*-test.{js,ts}"],
-}))];
+  })),
+];
