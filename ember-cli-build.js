@@ -50,6 +50,6 @@ module.exports = function (defaults) {
         },
       },
     },
-    /* eslint-disable prettier/prettier */
+    /* eslint-enable prettier/prettier */
   });
 };
