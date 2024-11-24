@@ -6,6 +6,9 @@ import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 
+import pluginEmberRecommended from 'eslint-plugin-ember/configs/recommended';
+import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
@@ -15,6 +18,10 @@ const compat = new FlatCompat({
 });
 
 export default [
+  js.configs.recommended,
+  ...pluginEmberRecommended,
+  pluginPrettierRecommended,
+
   {
     ignores: [
       // Unconventional js
@@ -33,11 +40,6 @@ export default [
       '.node_modules.ember-try/',
     ],
   },
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:ember/recommended',
-    'plugin:prettier/recommended',
-  ),
   {
     plugins: {
       ember,
