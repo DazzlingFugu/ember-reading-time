@@ -7,6 +7,7 @@ import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
 
 import pluginEmberRecommended from 'eslint-plugin-ember/configs/recommended';
+import pluginNode from 'eslint-plugin-n';
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -72,9 +73,8 @@ export default [
 
     rules: {},
   },
-  ...compat.extends('plugin:n/recommended').map((config) => ({
-    ...config,
-
+  {
+    ...pluginNode.configs['flat/recommended-script'],
     files: [
       '.prettierrc.js',
       '.stylelintrc.js',
@@ -86,7 +86,7 @@ export default [
       'config/**/*.js',
       'tests/dummy/config/**/*.js',
     ],
-  })),
+  },
   {
     files: [
       '.prettierrc.js',
