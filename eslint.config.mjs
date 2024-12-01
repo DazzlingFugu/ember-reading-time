@@ -93,7 +93,10 @@ export default [
     },
   },
   {
+    // Config for test files
+
     ...pluginQunitRecommended,
+
     files: ['tests/**/*-test.{js,ts}'],
   },
 ];
