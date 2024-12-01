@@ -64,20 +64,10 @@ export default [
     rules: {},
   },
   {
+    // Config for Node files
+
     ...pluginNode.configs['flat/recommended-script'],
-    files: [
-      '.prettierrc.js',
-      '.stylelintrc.js',
-      '.template-lintrc.js',
-      'ember-cli-build.js',
-      'index.js',
-      'testem.js',
-      'blueprints/*/index.js',
-      'config/**/*.js',
-      'tests/dummy/config/**/*.js',
-    ],
-  },
-  {
+
     files: [
       '.prettierrc.js',
       '.stylelintrc.js',
