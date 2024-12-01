@@ -60,8 +60,6 @@ export default [
         },
       },
     },
-
-    rules: {},
   },
   {
     // Config for Node files
