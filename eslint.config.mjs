@@ -1,15 +1,15 @@
-import ember from 'eslint-plugin-ember';
 import globals from 'globals';
 import babelParser from '@babel/eslint-parser';
-import js from '@eslint/js';
 
+import pluginEmber from 'eslint-plugin-ember';
 import pluginEmberRecommended from 'eslint-plugin-ember/configs/recommended';
+import pluginEslintJs from '@eslint/js';
 import pluginNode from 'eslint-plugin-n';
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginQunitRecommended from 'eslint-plugin-qunit/configs/recommended';
 
 export default [
-  js.configs.recommended,
+  pluginEslintJs.configs.recommended,
   ...pluginEmberRecommended,
   pluginPrettierRecommended,
 
@@ -33,7 +33,7 @@ export default [
   },
   {
     plugins: {
-      ember,
+      ember: pluginEmber,
     },
 
     languageOptions: {
@@ -60,24 +60,12 @@ export default [
         },
       },
     },
+  },
+  {
+    // Config for Node files
 
-    rules: {},
-  },
-  {
     ...pluginNode.configs['flat/recommended-script'],
-    files: [
-      '.prettierrc.js',
-      '.stylelintrc.js',
-      '.template-lintrc.js',
-      'ember-cli-build.js',
-      'index.js',
-      'testem.js',
-      'blueprints/*/index.js',
-      'config/**/*.js',
-      'tests/dummy/config/**/*.js',
-    ],
-  },
-  {
+
     files: [
       '.prettierrc.js',
       '.stylelintrc.js',
@@ -103,7 +91,10 @@ export default [
     },
   },
   {
+    // Config for test files
+
     ...pluginQunitRecommended,
+
     files: ['tests/**/*-test.{js,ts}'],
   },
 ];
